@@ -3,19 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const textInput = document.getElementById('textInput');
 
     accessButton.addEventListener('click', () => {
-        const value = textInput.value.trim();
-        const messageDiv = document.getElementById('message');
+        const _0x1 = textInput.value.trim().toLowerCase();
+        const _0x2 = document.getElementById('message');
         
-        if (!value) return;
+        if (!_0x1) return;
 
-        const validCodes = ["floor 9", "piso 9", "piso9", "floor9"];
+        // Obfuscated codes using character shifting
+        const _0x3 = ["gmpps!:", "qjtp!:", "qjtpa", "gmppra"];
+        const _0x4 = _0x1.split('').map(c => String.fromCharCode(c.charCodeAt(0) + 1)).join('');
         
-        if (validCodes.includes(value.toLowerCase())) {
-            messageDiv.textContent = "You unlocked the next video";
-            messageDiv.style.color = "#fff";
+        if (_0x3.includes(_0x4)) {
+            _0x2.textContent = "You unlocked the next video";
+            _0x2.style.color = "#fff";
         } else {
-            messageDiv.textContent = "Incorrect";
-            messageDiv.style.color = "#ff4444";
+            _0x2.textContent = "Incorrect";
+            _0x2.style.color = "#ff4444";
         }
     });
 
