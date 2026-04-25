@@ -13,8 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const _0x4 = _0x1.split('').map(c => String.fromCharCode(c.charCodeAt(0) + 1)).join('');
         
         if (_0x3.includes(_0x4)) {
-            _0x2.textContent = "You unlocked the next video";
+            _0x2.textContent = "Redirecting...";
             _0x2.style.color = "#fff";
+            window.location.href = "https://gofile.io/d/ohXWOz";
         } else {
             _0x2.textContent = "Incorrect";
             _0x2.style.color = "#ff4444";
